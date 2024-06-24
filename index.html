@@ -4,18 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Poplloon | Mira Softworks</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container-fluid">
+    <div>
         <header>
-            <nav class="nav justify-content-center">
-                <a class="nav-link" href="#">Home</a>
-                <a class="nav-link" href="#">Sneak Peeks</a>
-                <a class="nav-link" href="#">Privacy Policy</a>
+            <nav class="navbar" id="TopNav">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="sneak_peek.html">Sneak Peeks</a>
+                <a class="nav-link" href="privacy_policy.html">Privacy Policy</a>
+                <a class="icon" href="javascript:void(0)" onclick="ResponsiveScreen()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </nav>
         </header>
+
+        <div>
+            <h1 id="HomeTitle">Download Now!</h1>
+            <div class="landing-picture">
+                <img src="assets/img/Poplloon_Landing.png" width="800" height="400" alt="Play now Poplloon!"/>
+            </div>
+            <div class="store-button">
+                <a href="https://github.com/albmira/Poplloon" target="_blank" rel="noopener noreferrer"><img src="assets/img/PlayStore_button.png" alt="Google Play Store" width="460" height="150"/></a>
+            </div>
+        </div>
     </div>
+
+    <div>
+        <footer class="f-content">
+            <blockquote><small>Email: albertmiragamedev@gmail.com || Discord: smulli - Copy Right&copy; 2023 Mira Softworks Lab</small></blockquote>
+        </footer>
+    </div>
+
+    <script src="scripts/responsive.js"></script>
 </body>
 </html>

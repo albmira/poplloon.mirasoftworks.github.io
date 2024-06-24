@@ -5,7 +5,7 @@
 }
 
 html {
-    background-color: #ebebeb;
+    background-image: url("../assets/img/Background_home_page.jpg");
 }
 
 body {
@@ -15,20 +15,101 @@ body {
     border: 0;
 }
 
-.container-fluid {
-    background-color: #ebebeb;
-    border-bottom: solid red;
-}
-
-header nav {
+header {
     font-size: larger;
     font-weight: bold;
+    background-color: #FFFFFD;
+    border-bottom: solid red;
+    box-shadow: 0px 1px 5px;
 }
 
-a {
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
     color: red;
+    margin-top: 15px;    
+    padding-left: 30px;
+    text-decoration: none;
 }
 
-a:hover {
+.navbar a:hover {
     color: rgb(128, 0, 0);
+}
+
+.navbar a.active {
+    color: rgb(128, 0, 0);
+}
+
+.navbar .icon {
+    display: none;
+}
+
+
+@media screen and (max-width: 720px) {
+    .navbar {
+        display: flex;
+        justify-content: right;
+        margin-right: 30px;
+    }
+
+    .navbar a:not(:last-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive a .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+#HomeTitle {
+    color: red;
+    text-align: center;
+    padding: 100px 0px 20px 0px;
+}
+
+.landing-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-picture img {
+    border-radius: 5%;
+}
+
+.store-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 20px 0px;
+}
+
+.f-content {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid blue;
+    box-shadow: 10px 0px 15px;    
 }
