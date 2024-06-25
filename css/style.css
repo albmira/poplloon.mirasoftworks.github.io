@@ -10,9 +10,10 @@ html {
 
 body {
     font-family: 'JosefinSans';
-    margin: 0;
-    min-height: 100vh;
     position: relative;
+    padding-bottom: 58px;
+    min-height: 100vh;
+    margin: 0;
 }
 
 header {
@@ -46,6 +47,13 @@ header {
 
 .navbar .icon {
     display: none;
+}
+
+.m-content {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 30px 20px;
+
 }
 
 
@@ -87,7 +95,7 @@ header {
 #HomeTitle {
     color: red;
     text-align: center;
-    padding: 100px 0px 20px 0px;
+    padding: 50px 0px 20px 0px;
 }
 
 .landing-picture {
@@ -104,7 +112,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px 0px 20px 0px;
+    margin: 40px 0px 50px 0px;
 }
 
 img {
@@ -116,10 +124,11 @@ img {
 .f-content {
     clear: both;
     position: relative;
-    margin-top: 100px;
-    height: auto;
     overflow: hidden;
     border-top: solid blue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer {
