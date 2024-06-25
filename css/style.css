@@ -122,8 +122,6 @@ img {
 }
 
 .f-content {
-    clear: both;
-    position: relative;
     overflow: hidden;
     border-top: solid blue;
     position: absolute;
