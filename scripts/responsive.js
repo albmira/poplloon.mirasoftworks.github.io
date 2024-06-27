@@ -2,7 +2,7 @@ let click = false;
 var x = document.getElementById("TopNav");
 var sheet = window.document.styleSheets[0];
 
-function ResponsiveScreen() {
+function ResponsiveMenu() {
     if(x.className === "navbar" && !click) {
         x.className += " responsive";
         sheet.insertRule('.navbar a.icon {color: rgb(128, 0, 0);}');
